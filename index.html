@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projekt karty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body background="img/tlo.jpg">
+    <header>Cart-Memory game</header>
+    <div id="allContent">
+        <!--<div id='rulesHeader'>The Rules:</div> -->
+        <div id='rules'>
+                <!--<span id="currentWidth">Szerokość okna:</span><br>-->
+                Popular card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards. You need to do it with as little attempts as possible! See for more <a href="https://en.wikipedia.org/wiki/Concentration_(game)" target="_blank">details</a></div>
+        <div id='startProperties'>
+                <span>Start Properties</span>
+                <div id='level'>
+                        <span>Choose the level:</span>
+                        <form>
+                                <input type="radio" name="lvl" value="easy" checked="checked"> Easy<br>
+                                <input type="radio" name="lvl" value="hard"> Hard<br>
+                                <input type="radio" name="lvl" value="hardcore"> HARDCORE<br>
+                                <input type="radio" name="lvl" value="unlimited"> No level, just play
+                        </form><br>
+                </div>
+                <div id='cardsInGame'>
+                        <span>Choose if you want to play with 26 or 52 cards</span>
+                        <form>
+                                <input type="radio" name="cardsInGame" value="52"> 52 cards (2 x 26 cards)<br>
+                                <input type="radio" name="cardsInGame" value="26" checked="checked"> 26 cards (2 x 13 cards)
+                        </form>
+                </div> 
+                <div id='cardStyle'>
+                        <br>Choose the card's color: <button id='blue'>Blue</button><button id='red'>Red</button><button id='black'>Black</button>
+                </div>              
+        </div>
+        <button id="startGame">Start the Game!</button>
+        <div id="gamePanel">Attempts left: </div>
+        <div id="allCards" name='cardField' class='allCards26'></div><br> <!-- 52 divs representing cards will be added through JS code -->
+    </div>
+    <footer>Website created by Mateusz Sęk, Copywright &copy; 2018</footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
